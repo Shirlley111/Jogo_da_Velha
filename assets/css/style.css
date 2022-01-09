@@ -1,0 +1,35 @@
+.col-4.bloco.ultimo {
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+.col-4.bloco.primeiro {
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-left-style: none;
+}
+.col-4.bloco {
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    min-height: 200px;
+}
+
+.row.last .col-4.bloco {
+    border-width: 2px;
+    border-bottom-style: none !important;
+}
+#game{
+ font-size: 100px;
+ background-color: #E0ECF8;
+ text-align: center;
+}
+.alert{
+    font-size: 10px;
+}
+
+.alert-secondary{
+    background-color: #00f100;
+    font-size: 25px;
+    margin-bottom: 30px;
+}

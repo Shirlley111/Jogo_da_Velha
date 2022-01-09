@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Jogo da velha</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body id="game" class="mb-4 mt-4">
+        
+      <div style="display: none;" class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+      </div>
+      <div style="display: none;" class="alert alert-warning" role="alert">
+        A simple secondary alert—check it out!
+      </div>
+      <div class="container" style="width: 600px;">
+        <div class="row linha1">
+            <div class="col-4 bloco primeiro"><div class="h-100 w-100"></div></div>
+            <div class="col-4 bloco"><div class="h-100 w-100"></div></div>
+            <div class="col-4 bloco ultimo"><div class="h-100 w-100"></div></div>
+        </div>
+        <div class="row linha2">
+            <div class="col-4 bloco primeiro"><div class="h-100 w-100"></div></div>
+            <div class="col-4 bloco"><div class="h-100 w-100"></div></div>
+            <div class="col-4 bloco ultimo"><div class="h-100 w-100"></div></div>
+        </div>
+        <div class="row last linha3">
+            <div class="col-4 bloco primeiro"><div class="h-100 w-100"></div></div>
+            <div class="col-4 bloco"><div class="h-100 w-100"></div></div>
+            <div class="col-4 bloco ultimo"><div class="h-100 w-100"></div></div>
+        </div>
+        
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+  <div id="choseSimbol" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title">Jogo da velha</h5>
+        </div>
+        <div class="modal-body">
+         <h2>Qual símbolo você escolhe?</h2>
+         <button type="button" onclick="choseSimbol(1)" class="btn btn-primary">X</button>
+         <button type="button" onclick="choseSimbol(2)" class="btn btn-primary">O</button>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="newGame" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title">Jogo da velha</h5>
+        </div>
+        <div class="modal-body">
+         <h2>Começar novo jogo?</h2>
+         <button type="button" data-dismiss="modal" onclick="resetJogo()" class="btn btn-primary">Novo jogo</button>
+         <button type="button" data-dismiss="modal" class="btn btn-primary">Cancelar</button>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
